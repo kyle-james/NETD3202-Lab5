@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Shop";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>
+
+    </p>
+    <style>
+        img {
+            filter: hue-rotate(180deg);
+        }   
+    </style>
+    @for (var i = 0; i < 5; i++)
+    {
+        <div class="row">
+            @for (var j = 0; j < 10; j++)
+            {
+
+                <div class="card">
+                    <img src="~/photo.png" class="card-img-top" alt="Product image for SKU#@i@j" />
+                    <div class="card=body">
+                        <h5 class="card-title"><a href="~/Home/Product?">@Model.smList[i].name</a></h5>
+                        <p class="card-text">$@Model.price</p>
+                        <a href="#" class="btn btn-primary">See Product Page</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+
+

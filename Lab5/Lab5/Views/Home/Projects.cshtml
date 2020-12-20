@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac gravida augue, eu lacinia purus. Donec ligula est, mattis ullamcorper suscipit vel, placerat et massa. Sed aliquet odio eget purus dapibus posuere sit amet ac felis. Ut finibus, lectus et congue ultricies, ligula arcu pellentesque enim, ac tincidunt ligula massa at neque. Nam tristique ipsum nisl, quis auctor mauris convallis sed. Maecenas scelerisque sagittis lacus sed hendrerit. Integer et sem non dolor tristique tristique. In eleifend ex sit amet metus venenatis, nec tincidunt sapien rhoncus. Praesent auctor ullamcorper est, a venenatis eros.
+
+        Proin pretium mollis elit, vel pretium metus pulvinar sit amet. Mauris lectus nulla, tincidunt nec dolor nec, ultricies tempus lacus. Suspendisse id tempus sem, ut efficitur mi. Pellentesque ultrices auctor justo vel molestie. Morbi urna dolor, pharetra non fringilla vitae, euismod eu leo. Cras faucibus, sapien eget egestas laoreet, elit mauris tincidunt dui, ut pellentesque magna nibh rhoncus nulla. Maecenas at ante velit. Suspendisse feugiat in neque at tincidunt.
+
+        In in nunc a nulla dignissim ullamcorper ac a urna. Curabitur pharetra neque eget enim vulputate, ac interdum lorem vulputate. Suspendisse ac arcu a leo ultrices pharetra ut sit amet velit. Etiam ultricies eros erat, eget egestas mauris eleifend ac. Curabitur efficitur quam eu massa imperdiet, vel molestie massa cursus. Praesent rutrum lorem cursus hendrerit semper. Nulla et velit in urna viverra volutpat a eget lorem. Aenean eleifend rutrum metus vitae ultricies. Morbi lacinia libero id lacinia semper. Curabitur et enim nec tellus sodales aliquam et vulputate metus. Vestibulum at massa vel metus dictum tempus vel vel nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        Phasellus tristique accumsan neque in lacinia. Aenean non tincidunt arcu, eget sodales arcu. Aenean ac nibh quis nisl pharetra tincidunt. Suspendisse scelerisque lacinia ligula sit amet feugiat. Pellentesque bibendum, nunc ac sagittis condimentum, risus massa accumsan nulla, nec semper ipsum arcu ac nibh. In in ante in sapien pellentesque eleifend eget ut leo. Nam consequat mi eget auctor viverra. Phasellus finibus convallis semper. Aenean luctus lorem sit amet dolor volutpat scelerisque. Sed vel justo turpis. Suspendisse varius eleifend sem ac sodales. Vestibulum luctus mollis quam at vulputate.
+
+        Vivamus placerat sem ac velit eleifend consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam viverra elit nec tempor molestie. Aliquam neque sem, viverra sit amet erat id, efficitur rhoncus justo. Vestibulum finibus tincidunt risus, vitae convallis nibh vehicula eget. Suspendisse viverra semper magna vitae scelerisque. Quisque et pretium augue. Mauris pellentesque justo sem, vitae ultricies magna venenatis in. Ut venenatis eget purus in rhoncus. Sed fermentum ultrices mauris, et condimentum nisi pharetra consectetur. Vestibulum vel dolor vitae orci placerat volutpat eu ornare mauris. Sed congue nulla erat, sed auctor nunc volutpat vitae.
+    </p>
+    <form action="~/Home/Projects" method="POST">
+        <label for="name">Project Title:</label>
+        <input name="name" type="text" id="name">
+        <br />
+        <label for="description">Project Description:</label>
+        <input name="description" type="text" id="description">
+        <br />
+        <label for="worker">Assigned Employee:</label>
+        <input name="worker" type="text" id="worker">
+        <br />
+        <input name="btnSubmit" value="submit" type="submit">
+    </form>
+    <ul>
+        <li>Project Name | Project Description | Worker</li>
+        @ViewData["Message"]
+    </ul>
+</div>
